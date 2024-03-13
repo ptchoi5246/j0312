@@ -29,19 +29,22 @@ public class Exception3_final {
 			System.out.println("형변환 오류(down casting) : " + e.getMessage());
 		}
 		
-		try {
-			String data = null;
-			System.out.println(data);
-			System.out.println(data + 100);
-			System.out.println((String) data + 100);
-			System.out.println(data.toString() + 100);
-			System.out.println("정상처리2");
-		} catch (NullPointerException e) {
-			//e.printStackTrace();
-			System.out.println("Null 값 체크 : " + e.getMessage());
-		} finally {
+			try {
+				String data = null;
+				System.out.println(data);
+				System.out.println(data + 100);
+				System.out.println((String) data + 100);
+				System.out.println(data.toString() + 100);
+				System.out.println("정상처리2");
+			} catch (NullPointerException e) {
+				//e.printStackTrace();
+				System.out.println("Null 값 체크 : " + e.getMessage());
+			} finally {
+				System.out.println("작업끝");
+			}	
+		
 			System.out.println("작업끝");
-		}
+	
 		
 	}
 }
