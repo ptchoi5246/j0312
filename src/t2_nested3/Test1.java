@@ -1,13 +1,17 @@
 package t2_nested3;
 
 // 중첩클래스(instance 멤버 클래스) : 로컬 클래스 
+//메소드 안에 중첩(내부)클래스 생성
 public class Test1 {
+	//필드
 	int su = 500;
 	
+	//기본 생성자
 	public Test1() {
 		System.out.println("이곳은 Test1클래스 입니다.");
 	}
 	
+	//메소드
 	public void modTest1() {
 		System.out.println("이곳은 Test1클래스의 modTest1메소드 입니다.");
 	}

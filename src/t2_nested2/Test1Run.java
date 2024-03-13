@@ -16,18 +16,19 @@ public class Test1Run {
 		Test1.Aa t1a = new Test1.Aa(); //내부 클래스 - 정적 멤버 클래스
 		//Test1의 내부 클래스 Aa = t1a
 		//static : 메소드에 저장 - 접근할 때 클래스명. 으로 접근
-		System.out.println("suB : " + t1a.suB);
+		System.out.println("suB : " + t1a.suB); //450
 		t1a.modTest1A(); //일반 메소드
-		//내부 Aa 클래스의 modTest1A 메소드 출력
+		//중첩(내부) Aa 클래스의 modTest1A 메소드 출력
 		t1a.modTest1B(); //static 메소드
-		//내부 Aa 클래스의 modTest2B 메소드 출력
+		//중첩(내부) Aa 클래스의 modTest2B 메소드 출력
 		System.out.println();
 		
 		System.out.println("suB : " + Test1.Aa.suB ); //클래스 이름에서 접근 - 메소드
+		//static : 메소드 저장 - 접근할 때 클래스명.(변수)로 접근
 		//450출력
 		Test1.Aa.modTest1B();
-		//static 선언
+		//static : 메소드 저장 - 접근할 때 클래스명.(변수)로 접근
+		//이곳은 중첩(내부) Aa클래스의 modTest1B메소드 입니다.
 	}
 }
 
-//공부하기
